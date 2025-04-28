@@ -1,3 +1,5 @@
 dxcam
 pillow
 numpy<2
+pynput
+pyautogui
