@@ -24,8 +24,12 @@ def get_heros(lineup_dir):
     # 读取文件内文件名
     filenames=[]
     for i,filename in enumerate(os.listdir(lineup_dir)):
-        print(i,":",filename)
         filenames.append(filename)
+    # 排序
+    filenames.sort()
+    # 打印
+    for i,filename in enumerate(filenames):
+        print(i,":",filename)
     print('---------请输入阵容序号---------')
     idx = input('请输入选择阵容序号：')
     filename=filenames[int(idx)]
