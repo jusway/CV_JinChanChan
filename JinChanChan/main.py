@@ -11,7 +11,7 @@ hero_lock = threading.Lock()  # 线程锁
 grab = dxcam.create(output_idx=Config.output_idx, output_color='RGB')
 # 初始化匹配器
 print('---正在加载模型---')
-matcher = FeatureMatcher(device='cpu')
+matcher = FeatureMatcher(device='cuda')
 # 构建特征数据库（只需运行一次）
 img_dict = load_imgs(Config.pictrue_dir)  # imgs {name:ndarray}
 img_features = {} # 向量数据库

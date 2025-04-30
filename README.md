@@ -1,6 +1,6 @@
 # B站教程地址
 
-【金铲铲自动拿牌(不是外挂是辅助)】 https://www.bilibili.com/video/BV1iRLJz3EfC/?share_source=copy_web&vd_source=dbb60edcfbcee053b3e3e7aa16ec24be
+【金铲铲自动拿牌(基于深度学习预训练Resnet)】 https://www.bilibili.com/video/BV1b7LozwEJa/?share_source=copy_web
 
 # 功能
 
