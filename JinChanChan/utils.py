@@ -54,7 +54,7 @@ def get_imgs(grab):
 
 def click(idx,name):
     x,y=Config.point
-    pyautogui.moveTo(x+50+idx*Config.move, y+50, duration=0)
+    pyautogui.moveTo(x+50+idx*Config.move+1920, y+50+Config.y_bias, duration=0)
     for _ in range(2):
         pyautogui.mouseDown( button="left")
         # time.sleep(0.01)
