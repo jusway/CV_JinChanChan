@@ -30,6 +30,3 @@
 链接: https://pan.baidu.com/s/1eD7vM2fdk7nj4q4XyrRFnQ?pwd=cm6x 提取码: cm6x 
 --来自百度网盘超级会员v3的分享
 
-# qq群
-
-点击链接加入群聊【计算机视觉-b站定灭】：https://qm.qq.com/q/yOVBSTEQdq
