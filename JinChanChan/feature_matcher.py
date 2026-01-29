@@ -4,11 +4,11 @@ import torchvision.models as models
 import torchvision.transforms as transforms
 from PIL import Image
 
-from utils import load_imgs
+from resource_manager import ResourceManager
 from config import Config
 
 class FeatureMatcher:
-    def __init__(self,device='cuda'):
+    def __init__(self,device='cpu'):
         # 使用ResNet-18作为特征提取器
         self.model = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
         self.model = torch.nn.Sequential(*list(self.model.children())[:-1])  # 移除最后一层
@@ -52,7 +52,7 @@ class FeatureMatcher:
 if __name__ == '__main__':
     matcher = FeatureMatcher(device='cuda')
     # 构建特征数据库（只需运行一次）
-    img_dict=load_imgs(Config.pictrue_dir) #   imgs {name:ndarray}
+    img_dict = ResourceManager.load_hero_images(Config.pictrue_dir)
     img_features = {}
     for k, v in img_dict.items():
         img_features[k] = matcher.extract_features(v)

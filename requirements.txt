@@ -1,0 +1,7 @@
+torch # cpu版本也可
+torchvision
+mss
+pillow
+numpy<2
+pynput
+pyautogui
